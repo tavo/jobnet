@@ -9,5 +9,29 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require_tree .
+ *= require angular-material
  */
+
+.jobNetApp {
+  /** From vulcanized demo **/ }
+  .jobNetApp section {
+    background: #f7f7f7;
+    border-radius: 3px;
+    text-align: center;
+    margin: 1em;
+    position: relative !important;
+    padding-bottom: 10px; }
+  .jobNetApp material-content {
+    margin-right: 7px; }
+  .jobNetApp section material-button:not(.material-button-fab) {
+    width: 10em; }
+  .jobNetApp section material-button {
+    display: block;
+    margin: 1em;
+    line-height: 25px; }
+  .jobNetApp .label {
+    position: absolute;
+    bottom: 5px;
+    left: 7px;
+    color: #ccc;
+    font-size: 14px; }

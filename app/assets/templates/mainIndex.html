@@ -1,5 +1,10 @@
 <h1 class="text-center">My blog</h1>
-<div class="row" ng-repeat="post in data.posts">
-    <h2>{{ post.title }}</h2>
-    <p>{{ post.contents }}</p>
-</div>
+
+<section layout="vertical" layout-sm="horizontal" layout-align="center center">
+  <div class="row" ng-repeat="post in data.posts">
+      <h2>{{ post.title }}</h2>
+      <p>{{ post.contents }}</p>
+  </div>
+</section>
+
+<material-button class="material-button-raised">Button</material-button>
