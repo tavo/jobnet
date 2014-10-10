@@ -5,5 +5,4 @@ app.controller('IndexCtrl',['$scope','mainService',($scope,mainService) ->
   .success((data)->
     $scope.data = data
   )
-    
 ])

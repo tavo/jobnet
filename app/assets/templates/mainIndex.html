@@ -1,10 +1,12 @@
 <h1 class="text-center">My blog</h1>
 
-<section layout="vertical" layout-sm="horizontal" layout-align="center center">
-  <div class="row" ng-repeat="post in data.posts">
-      <h2>{{ post.title }}</h2>
-      <p>{{ post.contents }}</p>
-  </div>
-</section>
+<div class="row" ng-repeat="post in data.posts">
+  <h2>{{ post.title }}</h2>
 
-<material-button class="material-button-raised">Button</material-button>
+  <material-whiteframe class="material-whiteframe-z1" layout layout-align="center center">
+    <p>{{ post.contents }}</p>
+  </material-whiteframe>
+  
+</div>
+
+<material-button class="material-button-raised material-button-colored">Button</material-button>

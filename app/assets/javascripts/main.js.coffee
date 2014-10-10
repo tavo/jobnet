@@ -10,7 +10,7 @@
 #= require_tree ./controllers/main
 # require_tree ./directives/global
 # require_tree ./directives/main
-#= require_tree ./angular-material
+#= require_tree ../../../vendor/assets/javascripts/angular-material
 
 root = exports ? this
 # Creates new Angular module called 'Blog'

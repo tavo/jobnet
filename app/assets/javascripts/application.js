@@ -12,6 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require ./angular-material/angular
+//= require angular-material/angular
 //= require angular-route
-// require angular
+//= require bootstrap-sprockets
