@@ -1,12 +1,49 @@
-<h1 class="text-center">My blog</h1>
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">JobNet</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-<div class="row" ng-repeat="post in data.posts">
-  <h2>{{ post.title }}</h2>
+<material-toolbar ng-repeat="post in data.posts">
+  <h1 class="material-toolbar-tools custom_divider">{{ post.title }}</h1>
 
-  <material-whiteframe class="material-whiteframe-z1" layout layout-align="center center">
-    <p>{{ post.contents }}</p>
+  <material-whiteframe class="material-whiteframe-z1 material-tile-content" layout layout-align="center center">
+    <p class="right_side_button">{{ post.contents }}</p>
+    <div>
+      <material-button class="material-button-raised material-button-colored">
+        <span class="glyphicon glyphicon-plus"></span>
+      </material-button>
+    </div>
   </material-whiteframe>
   
-</div>
+</material-toolbar>
 
-<material-button class="material-button-raised material-button-colored">Button</material-button>
+
