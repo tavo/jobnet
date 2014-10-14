@@ -11,6 +11,7 @@
 # require_tree ./directives/global
 # require_tree ./directives/main
 #= require_tree ../../../vendor/assets/javascripts/angular-material
+#= require ../../../vendor/assets/javascripts/parallax/modernizr
 
 root = exports ? this
 # Creates new Angular module called 'Blog'

@@ -13,5 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require angular-material/angular
+//= require parallax/modernizr
 //= require angular-route
 //= require bootstrap-sprockets
